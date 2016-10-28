@@ -1,1 +1,15 @@
 /* CSS declarations go here */
+body {
+	font-size: 12px;
+}
+.jumbotron {
+	background-image: url('images/flag.jpeg');
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.jumbotron h1 { font-size: 40px; max-width: 80%; margin: 0 auto;}
+.jumbotron .title-wrapper { background: #000; opacity: 0.4; padding: 20px 0; margin: 10px 0;}
+
+h4.question { display: inline-block;}

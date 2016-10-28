@@ -3,10 +3,10 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.questions.helpers({
+Template.choices.helpers({
   
-  questions: function() {
-    return Questions.find();
+  choices: function() {
+    return Choices.find();
   }
   
 });

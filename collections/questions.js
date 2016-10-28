@@ -1,1 +1,2 @@
-Questions = new Mongo.Collection('questions');
+Choices = new Mongo.Collection('choices');
+Quotes = new Mongo.Collection('quotes');
