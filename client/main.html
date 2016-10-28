@@ -5,21 +5,31 @@
 <body>
   <h1>Can you guess the original question to each of these debate responses?</h1>
 
-  {{> hello}}
-  {{> info}}
+  {{> questions}}
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="questions">
+ {{ #each questions }}
+          {{ > question }}
+  {{ /each }}
+
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="question">
+
+<div class="question well well-lg" data-id="{{ _id }}">
+    
+    <h3>{{ question }}</h3>
+
+    {{ #each indexedArray choices }}
+        <a href="#" class="vote btn btn-primary btn-block" data-id="{{ _index }}">
+            <span class="votes pull-right">{{ votes }}</span>
+            <span class="text">{{ text }}</span>
+        </a>
+    {{ /each }}
+    
+</div>
+
+
 </template>
