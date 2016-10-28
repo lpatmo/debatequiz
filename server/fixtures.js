@@ -2,6 +2,24 @@
 Meteor.startup(function() {
 
   // if there are no questions available create sample data
+  if (Quotes.find().count() === 0) {
+
+    // create sample questions
+    var sampleQuotes = [
+      {
+        quote: "quote 1"
+      },
+      {
+        quote: "quote 2"
+      }
+    ];
+
+    // loop over each sample poll and insert into database
+    _.each(sampleQuotes, function(quote) {
+      Quotes.insert(quote);
+    });
+  }
+
   if (Choices.find().count() === 0) {
 
     // create sample questions
@@ -13,20 +31,12 @@ Meteor.startup(function() {
           { text: 'Our institutions are under cyber attack, and our secrets are being stolen. So my question is, who\'s behind it? And how do we fight it?', votes: 0 },
           { text: 'Tell us specifically how you would prevent homegrown attacks by American citizens?', votes: 0 },
         ]
-      },
-      {
-        choices: [
-          { text: 'Possible question #1', votes: 0 },
-          { text: 'Possible question #2', votes: 0 },
-          { text: 'Possible question #3', votes: 0 },
-          { text: 'Possible question #4', votes: 0 },
-        ]
       }
     ];
 
     // loop over each sample poll and insert into database
     _.each(sampleChoices, function(choice) {
-      Choices.insert(question);
+      Choices.insert(choice);
     });
 
   }

@@ -11,6 +11,12 @@ Template.choices.helpers({
   
 });
 
+Template.quotes.helpers({
+  quotes: function() {
+  	return Quotes.find();
+  }
+});
+
 UI.registerHelper('indexedArray', function(context, options) {
   if (context) {
     return context.map(function(item, index) {

@@ -11,7 +11,6 @@
 </div>
 
   {{> quotes }}
-  {{> choices }}
 
 </body>
 
@@ -23,17 +22,22 @@
 
 <template name="choices">
  {{ #each choices }}
-          {{ > choice }}
+          {{ > choice }} <!--Need to return a random # of 3 choices here instead of all the choices-->
   {{ /each }}
+</template>
+
+<template name="quote">
+  <div class="container">
+      <img src="/images/caricatures.jpg" width="100"/>
+      <h4 class="quote">"{{ quote }}"</h4>  
+      {{ > choices }}
+  </div>
 </template>
 
 <template name="choice">
 
-<div class="choice well well-lg" data-id="{{ _id }}">
+  <div class="choice well well-lg" data-id="{{ _id }}">
     
-    <img src="/images/caricatures.jpg" width="100"/>
-      <h4 class="quote">"{{ quote }}"</h4>
-
     {{ #each indexedArray choices }}
         <a href="#" class="vote btn btn-primary btn-block" data-id="{{ _index }}">
             <span class="votes pull-right">{{ votes }}</span>
@@ -41,7 +45,7 @@
         </a>
     {{ /each }}
     
-</div>
+  </div>
 
 
 </template>
