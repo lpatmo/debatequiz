@@ -30,6 +30,10 @@ Meteor.startup(function() {
           { text: 'In the last couple of weeks, you acknowledged what most Americans have accepted for years: The president was born in the United States. Can you tell us what took you so long?', votes: 0 },
           { text: 'Our institutions are under cyber attack, and our secrets are being stolen. So my question is, who\'s behind it? And how do we fight it?', votes: 0 },
           { text: 'Tell us specifically how you would prevent homegrown attacks by American citizens?', votes: 0 },
+          { text: 'How are you going to bring back the industries that have left this country for cheaper labor overseas?', votes: 0 },
+          { text: "Don't Americans have a right to know if there are any conflicts of interest?", votes: 0 },
+          { text: "Tell us specifically how you would prevent homegrown attacks by American citizens...", votes: 0 },
+          { text: "...are you willing to accept the outcome as the will of the voters?", votes: 0 },
         ]
       }
     ];
