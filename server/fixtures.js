@@ -53,7 +53,55 @@ Meteor.startup(function() {
       },
       {
         /* TRUMP */quote: "...I mean, I'll take the admirals and I'll take the generals any day over the political hacks that I see that have led our country so brilliantly over the last 10 years with their knowledge. OK? Because look at the mess that we're in. Look at the mess that we're in."
-      }
+      },
+      /* 
+       * QUESTION:
+       * Tell us specifically how you would prevent homegrown attacks by American citizens?
+       */
+       {
+         /* CLINTON */quote: "But the larger point -- and he says this constantly -- is George W. Bush made the agreement about when American troops would leave Iraq, not Barack Obama."
+       },
+       {
+         /* CLINTON */quote: "And I think we've got to have an intelligence surge, where we are looking for every scrap of information."
+       },
+       {
+         /* TRUMP */quote: "...Or, as I've been saying for a long time, and I think you'll agree, because I said it to you once, had we taken the oil -- and we should have taken the oil -- ISIS would not have been able to form either, because the oil was their primary source of income."
+       },
+       {
+         /* TRUMP */quote: "...But they wouldn't have even been formed if they left some troops behind, like 10,000 or maybe something more than that. And then you wouldn't have had them."
+       },
+       /* 
+        * QUESTION:
+        * How are you going to bring back the industries that have left this country for cheaper labor overseas?
+        */
+        {
+          /* CLINTON */quote: "Well, let's stop for a second and remember where we were eight years ago. We had the worst financial crisis, the Great Recession, the worst since the 1930s. That was in large part because of tax policies that slashed taxes on the wealthy, failed to invest in the middle class, took their eyes off of Wall Street, and created a perfect storm."
+        },
+        {
+          /* CLINTON */quote: "...Now, we have come back from that abyss. And it has not been easy. So we're now on the precipice of having a potentially much better economy, but the last thing we need to do is to go back to the policies that failed us in the first place."
+        },
+        {
+          /* TRUMP */quote: "Well, for one thing -- and before we start on that -- my father gave me a very small loan in 1975, and I built it into a company that's worth many, many billions of dollars, with some of the greatest assets in the world, and I say that only because that's the kind of thinking that our country needs."
+        },
+        {
+          /* TRUMP */quote: "Our country's in deep trouble. We don't know what we're doing when it comes to devaluations and all of these countries all over the world, especially China."
+        },
+        /* 
+         * QUESTION:
+         * ...the reason nominees have released their returns for decades is so that voters will know if their potential president owes money to -- who he owes it to and any business conflicts. Don't Americans have a right to know if there are any conflicts of interest?
+         */
+         {
+           /* CLINTON */quote: "...And the financial disclosure statements, they don't give you the tax rate. They don't give you all the details that tax returns would. And it just seems to me that this is something that the American people deserve to see."
+         },
+         {
+           /* CLINTON */quote: "For 40 years, everyone running for president has released their tax returns. You can go and see nearly, I think, 39, 40 years of our tax returns, but everyone has done it."
+         },
+         {
+           /* TRUMP */quote: " will release my tax returns -- against my lawyer's wishes -- when she releases her 33,000 e-mails that have been deleted. As soon as she releases them, I will release."
+         },
+         {
+           /* TRUMP */quote: "But that's the kind of thinking that our country needs. When we have a country that's doing so badly, that's being ripped off by every single country in the world, it's the kind of thinking that our country needs,"
+         }
     ];
 
     // loop over each sample poll and insert into database
@@ -70,12 +118,10 @@ Meteor.startup(function() {
         choices: [
           { text: 'Why are you a better choice than your opponent to create the kinds of jobs that will put more money into the pockets of American works?', votes: 0 },
           { text: 'In the last couple of weeks, you acknowledged what most Americans have accepted for years: The president was born in the United States. Can you tell us what took you so long?', votes: 0 },
-          { text: 'Our institutions are under cyber attack, and our secrets are being stolen. So my question is, who\'s behind it? And how do we fight it?', votes: 0 },
+          { text: `Our institutions are under cyber attack, and our secrets are being stolen. So my question is, who's behind it? And how do we fight it?`, votes: 0 },
           { text: 'Tell us specifically how you would prevent homegrown attacks by American citizens?', votes: 0 },
           { text: 'How are you going to bring back the industries that have left this country for cheaper labor overseas?', votes: 0 },
-          { text: "Don't Americans have a right to know if there are any conflicts of interest?", votes: 0 },
-          { text: "Tell us specifically how you would prevent homegrown attacks by American citizens...", votes: 0 },
-          { text: "...are you willing to accept the outcome as the will of the voters?", votes: 0 },
+          { text: "...the reason nominees have released their returns for decades is so that voters will know if their potential president owes money to -- who he owes it to and any business conflicts. Don't Americans have a right to know if there are any conflicts of interest?", votes: 0 }
         ]
       }
     ];
